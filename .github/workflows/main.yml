@@ -3,9 +3,9 @@ name: Python CI
 # 触发规则
 on:
   push:
-    分支: [ master ]
+    branches: [ master ]
   pull_request:
-    分支: [ master ]
+    branches: [ master ]
 
 # 全局启用 Node.js 24
 env:
