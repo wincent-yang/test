@@ -1,11 +1,11 @@
 name: Python CI
 
 # 触发规则
-on:
+于:
   push:
-    branches: [ master ]
+    分支: [ master ]
   pull_request:
-    branches: [ master ]
+    分支: [ master ]
 
 # 全局启用 Node.js 24
 env:
@@ -33,4 +33,4 @@ jobs:
 
       # 运行脚本
       - name: Run Python script
-        run: python 时钟.py
+        run: python demo1.py
