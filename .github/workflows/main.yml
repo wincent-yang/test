@@ -12,25 +12,4 @@ env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      # 已适配 Node24 最新版本
-      - name: Checkout code
-        uses: actions/checkout@v4.1.7
-
-      # 配置 Python
-      - name: Set up Python
-        uses: actions/setup-python@v5.2.0
-        with:
-          python-version: "3.11"
-
-      # 安装依赖
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt || echo "No requirements file, skip"
-
-      # 运行脚本
-      - name: Run Python script
-        run: python chap2/demo1.py
+  
