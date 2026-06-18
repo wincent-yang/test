@@ -22,3 +22,4 @@ __pycache__/
 # 你原来的规则：忽略所有 XML 文件
 *.xml
 
+.obsidian/
